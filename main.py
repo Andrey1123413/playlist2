@@ -53,3 +53,9 @@ playlist_f = (
     {"Free Bird": 9.08, "Enter Sandman": 5.31, "One": 7.45, "Sliver" : 2.10, "Come as You Are": 3.45},
     {"Thunderstruck": 4.53, "You Shook Me All Night Long": 3.29, "Everlong" : 4.51, "My Hero" : 4.02},
 )
+
+
+# Предположим, нам нужно выбрать n(ввести параметр n) случайных песен
+n = 1
+total_time = get_duration(playlist_e, playlist_f, n)
+print(f'Общее время для {n} случайных песен: {total_time:.2f} минут')
