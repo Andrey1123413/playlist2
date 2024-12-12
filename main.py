@@ -12,3 +12,10 @@ def parse_playlist_f(playlist):
     for p in playlist:
         combined_dict.update(p)
     return combined_dict
+# Функция для объединения двух плейлистов
+def combine_playlists(playlist_e, playlist_f):
+    playlist_e_dict = parse_playlist_e(playlist_e)
+    playlist_f_dict = parse_playlist_f(playlist_f)
+    combined_playlist = {**playlist_e_dict, **playlist_f_dict}
+    return combined_playlist
+
