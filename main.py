@@ -23,3 +23,7 @@ def combine_playlists(playlist_e, playlist_f):
 def select_random_songs(combined_playlist, n):
     return random.sample(list(combined_playlist.items()), n)
 
+# Функция для подсчета общего времени звучания
+def calculate_total_time(selected_songs):
+    total_time = sum(time for _, time in selected_songs)
+    return total_time
